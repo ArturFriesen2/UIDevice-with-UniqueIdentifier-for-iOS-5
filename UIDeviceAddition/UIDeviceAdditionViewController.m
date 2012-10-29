@@ -11,11 +11,6 @@
 
 @implementation UIDeviceAdditionViewController
 
-- (void)dealloc
-{
-    [super dealloc];
-}
-
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
@@ -38,7 +33,6 @@
                   [[UIDevice currentDevice] uniqueDeviceIdentifier]];
     
     [self.view addSubview:label];
-    [label release];
                   
     label = [[UILabel alloc] initWithFrame:CGRectMake(10, 210, 300, 100)];
     label.numberOfLines = 0;
@@ -47,7 +41,6 @@
                   [[UIDevice currentDevice] uniqueGlobalDeviceIdentifier]];
                   
     [self.view addSubview:label];
-    [label release];
 }
 
 
